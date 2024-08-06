@@ -1,12 +1,11 @@
-import Home from "./pages/Home/Home.tsx";
-
+import Grid from "./components/Grid/Grid"
 
 function App() {
 
 
   return (
       <>
-        <Home></Home>
+        <Grid />
       </>
   )
 }
