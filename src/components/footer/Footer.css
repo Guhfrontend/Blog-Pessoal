@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#logo{
+    transition: all ease 1s;
+}
+#logo:hover{
+    filter: drop-shadow(0 0 10px white);
+    transform: rotate(30deg) ;
+}
