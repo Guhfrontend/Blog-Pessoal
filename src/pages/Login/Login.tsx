@@ -38,7 +38,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
         <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
           <h2 className="text-slate-900 text-5xl ">Entrar</h2>
           <div className="flex flex-col w-full">
@@ -65,7 +65,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <button  type='submit' className="rounded bg-indigo-400 hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
+          <button  type='submit' className="rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-400 hover:transition duration-1000 ease-linear text-white w-1/2 py-2 flex justify-center">
            {isLoading ? <RotatingLines
             strokeColor="white"
             strokeWidth="5"
@@ -80,12 +80,12 @@ function login(e: ChangeEvent<HTMLFormElement>) {
 
           <p>
             Ainda não tem uma conta?{' '}
-            <Link to="/cadastro" className="text-indigo-800 hover:underline">
+            <Link to="/cadastro" className="text-indigo-500 hover:underline">
               Cadastre-se
             </Link>
           </p>
         </form>
-        <div className="fundoLogin hidden lg:block"></div>
+        <div className="hidden lg:block"><img className='h-[100vh] w-[50vw]' src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
       </div>
     </>
   );
