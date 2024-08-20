@@ -22,7 +22,7 @@ function Navbar() {
       navbarComponent = (
         <div className='w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white flex justify-center py-4'>
           <div className="container flex justify-between text-lg">
-            <Link to='/home' id='navbar-logo' className='text-2xl font-bold uppercase'>RIPSTERS BLOG</Link>
+            <Link to='/home' id='navbar-logo' className='text-2xl font-bold uppercase'>HIPSTERS BLOG</Link>
 
             <div className='flex gap-4'>
               <Link to='/postagens' className='hover:text-indigo-500 transition ease-in-out font-bold'>Postagens</Link>
